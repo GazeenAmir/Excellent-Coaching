@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.dropdown-menu li {
+    position: relative;
+    }
+    .dropdown-menu{
+    display: none;
+    position: absolute;
+
+    top: 30px;
+    }
+    
+    .dropdown-menu > li:hover {
+    display: block;
+    }
+    .active a{
+        color: #0275d8 !important;
+        font-weight: bold;
+    }
+
+    
+    .navbar-scrolled{
+        background-color: rgb(59, 59, 59);
+        box-shadow: 0 3px 10px rgba(0, 0 , 0 ,0.15);
+    }
+
+    .nav-link{
+        position: relative;
+    }
+    .nav-link::after{
+        content: "";
+        opacity: 0;
+        transition: all 0.2s;
+        height: 2px;
+        width: 100%;
+        background-color: #0860ac;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .nav-link:hover::after{
+        opacity: 1;
+    }
+
+
+
+/* Admission section */
+
+.wrapper {
+    max-width: 800px;
+    margin: 90px auto;
+    padding: 30px 45px;
+    box-shadow: 5px 25px 35px #3535356b;
+}
+
+.wrapper label {
+    display: block;
+    padding-bottom: 0.2rem;
+}
+
+.wrapper .form .row {
+    padding: 0.6rem 0;
+}
+
+
+#sub {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+#sub:focus {
+    outline:#0860ac;
+}
+
+@media(max-width: 768.5px) {
+    .wrapper {
+        margin: 90px;
+    }
+
+    .wrapper .form .row {
+        padding: 0;
+    }
+}
+
+@media(max-width: 400px) {
+    .wrapper {
+        padding: 25px;
+        margin: 20px;
+    }
+}
+
+/* footer section */
+.social-icon img{
+    width: 60px;
+    transition: 0.5s;
+}
+.social-icon a:hover img{
+    transform: translateY(-10px);
+}
